@@ -1,9 +1,6 @@
 import React from 'react';
-import './Games.css';
-import eventsData from './events.json';
-import { useState } from 'react';
- 
-
+import eventsData from './events.json'; 
+import '../index.css'
 
 
 console.log("eventsData", Object.keys(eventsData)[0][0])
@@ -17,7 +14,7 @@ const renderHeader = () => {
     const firstEvent = eventsData[Object.keys(eventsData)[0]][0];
         return Object.keys(firstEvent)
         .filter(key => key !== "address")
-        .map((key, index) => <th  scope ="col" key={index}>{capitalize(key)}</th>);
+        .map((key, index) => <th scope="col" className="px-6 py-3" key={index}>{capitalize(key)}</th>);
 
         
 }
@@ -33,34 +30,36 @@ const renderEvents = () => {
   
  
           return (
-            <tr key={`${dateKey}_${index}`}>
-              <td>{showDate ? entry.date : ""}</td>
-              <td>{entry.team}</td>
-              <td>{entry.Location}</td>
-              <td>{entry.time}</td>
+            <tr className= "bg-white border-b dark:bg-gray-800 dark:border-gray-700" key={`${dateKey}_${index}`}>
+              <td className="px-4 py-2">{showDate ? entry.date : ""}</td>
+              <td className="px-4 py-2">{entry.team}</td>
+              <td className="px-4 py-2">{entry.Location}</td>
+              <td className="px-4 py-2">{entry.time}</td>
             </tr>
           );
-        
-        
-    
       })
     ))
   }
 
 
 function Games() {
-    //console.log(eventsData);
+    
 
     return (
-        <div>
-            <h1>NYSL Game Information</h1>
-            <table class="table">
-                <thead>
-                  <tr>{renderHeader()}</tr>
-                </thead>
-            <tbody>{renderEvents()}</tbody>
-               </table>
-        </div>
+        
+<table className='w-full table-auto'>
+  <thead>
+    <tr>
+      {renderHeader()}
+    </tr>
+  </thead>
+  <tbody>
+
+     
+      {renderEvents()}     
+   
+  </tbody>
+</table>
     );
 }
 
