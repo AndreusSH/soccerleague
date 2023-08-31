@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function Navbar() {
  
   return (
-   <nav className="sticky top-0  w-full border border-b-1 z-50">
+   <nav className="sticky top-0  w-full border border-b-1 z-50 bg-gray-200">
     <div className="container max-w-5xl">
       <div className="flex flex-row py-1 items-center">
         <div className="basis-1/5">
@@ -14,7 +14,7 @@ function Navbar() {
                 width="80"></img>
         </div>
         <div className="basis-4/5 hidden w-full md:block md:w-auto">
-        <ul  className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 ">
+        <ul  className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-grey-100 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 ">
           <li>
               <NavLink to="/"  
                activeClassName="bg-purple-500"

@@ -1,9 +1,13 @@
 import React from 'react';
 import eventsData from './events.json'; 
-import '../index.css'
+import '../index.css';
+import { Link } from "react-router-dom";
+import { useParams, useNavigate } from 'react-router-dom';
 
 
-console.log("eventsData", Object.keys(eventsData)[0][0])
+
+
+ 
 
 const capitalize = (word) => {
 return word[0].toUpperCase() + word.slice(1);
@@ -21,7 +25,7 @@ const renderHeader = () => {
 
 const renderEvents = () => {
     let previousDate = null;
-     
+
     return Object.keys(eventsData).map(dateKey => (
       eventsData[dateKey].map((entry, index) => {
         const currentDate = entry.date;
@@ -32,9 +36,13 @@ const renderEvents = () => {
           return (
             <tr className= "bg-white border-b dark:bg-gray-800 dark:border-gray-700" key={`${dateKey}_${index}`}>
               <td className="px-4 py-2">{showDate ? entry.date : ""}</td>
+         
               <td className="px-4 py-2">{entry.team}</td>
-              <td className="px-4 py-2">{entry.Location}</td>
+              <Link to={`/games/${entry.location}`}><td className="px-4 py-2">{entry.Location}</td></Link>
+
+ 
               <td className="px-4 py-2">{entry.time}</td>
+          
             </tr>
           );
       })
@@ -43,8 +51,9 @@ const renderEvents = () => {
 
 
 function Games() {
-    
-
+  const { location } = useParams();
+  console.log(location,'test');
+ 
     return (
         
 <table className='w-full table-auto'>
@@ -53,7 +62,7 @@ function Games() {
       {renderHeader()}
     </tr>
   </thead>
-  <tbody>
+  <tbody >
 
      
       {renderEvents()}     
