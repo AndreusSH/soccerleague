@@ -4,14 +4,15 @@
 			"team": "U1 and U4",
 			"Location": "AJ Katzenmaier",
 			"time": "9:30 a.m.",
-			"address": "24 W. Walton St., Chicago, IL 60610"
+			"address": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.654060797269!2d-87.6316253243735!3d41.90029636402482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34e07f6bac3%3A0x68a82e5d59952c86!2s24%20W%20Walton%20St%2C%20Chicago%2C%20IL%2060610%2C%20USA!5e0!3m2!1sen!2sit!4v1693651757608!5m2!1sen!2sit" 
+		 
 		},
 		{
 			"date": "9/01",
 			"team": "U3 and U2",
 			"Location": "Greenbay",
 			"time": "1:00 p.m.",
-			"address": "1734 N. Orleans St., Chicago, IL 60614"
+			"address": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.025699045764!2d-87.64041422437275!3d41.91380626317852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34073f306a3%3A0x9e1726bbf8f23f0e!2s1734%20N%20Orleans%20St%2C%20Chicago%2C%20IL%2060614%2C%20USA!5e0!3m2!1sen!2sit!4v1693652189134!5m2!1sen!2sit"  
 		}
 	],
 	"2023_09_08": [{
@@ -19,14 +20,14 @@
 			"team": "U5 and U6",
 			"Location": "Howard A Yeager",
 			"time": "9:30 a.m.",
-			"address": "2245 N. Southport Ave., Chicago, IL 60614"
+			"address":  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.590606291456!2d-87.66570362437227!3d41.923158762592635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e37f9b8d2d%3A0x62ad8b907dd755d6!2s2245%20N%20Southport%20Ave%2C%20Chicago%2C%20IL%2060614%2C%20USA!5e0!3m2!1sen!2sit!4v1693652245637!5m2!1sen!2sit"  
 		},
 		{
 			"date": "9/08",
 			"team": "U6 and U1",
 			"Location": "Marjorie P Hart",
 			"time": "1:00 p.m.",
-			"address": "2625 N. Orchard St., Chicago, IL 60614"
+			"address": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.2917293244436!2d-87.648472524372!3d41.92958226218998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2630e551%3A0x3e719e44a5cef714!2s2625%20N%20Orchard%20St%2C%20Chicago%2C%20IL%2060614%2C%20USA!5e0!3m2!1sen!2sit!4v1693652288610!5m2!1sen!2sit"  
 		}
 	],
 	"2023_09_15": [{
@@ -34,14 +35,14 @@
 			"team": "U2 and U4",
 			"Location": "North",
 			"time": "9:30 a.m.",
-			"address": "1409 N. Ogden Ave., Chicago, IL 60610"
+			"address":  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.3558933826703!2d-87.64804792437313!3d41.906707463623164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd33a674ca85d%3A0x9940c7163c4950c5!2s1409%20N%20Ogden%20Ave%2C%20Chicago%2C%20IL%2060610%2C%20USA!5e0!3m2!1sen!2sit!4v1693652324014!5m2!1sen!2sit"  
 		},
 		{
 			"date": "9/15",
 			"team": "U3 and U5",
 			"Location": "AJ Katzenmaier",
 			"time": "1:00 p.m.",
-			"address": "24 W. Walton St., Chicago, IL 60610"
+			"address": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.654060797269!2d-87.6316253243735!3d41.90029636402482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34e07f6bac3%3A0x68a82e5d59952c86!2s24%20W%20Walton%20St%2C%20Chicago%2C%20IL%2060610%2C%20USA!5e0!3m2!1sen!2sit!4v1693651757608!5m2!1sen!2sit" 
 		}
 	],
 	"2023_09_22": [{
@@ -49,14 +50,14 @@
 			"team": "U1 and U3",
 			"Location": "South",
 			"time": "9:30 a.m.",
-			"address": "2101 N. Fremont St., Chicago, IL 60614"
+			"address": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.73184041794!2d-87.65326342437243!3d41.920123062782686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd319e92cb225%3A0xedb076e11ba7df6f!2s2101%20N%20Fremont%20St%2C%20Chicago%2C%20IL%2060614%2C%20USA!5e0!3m2!1sen!2sit!4v1693652398419!5m2!1sen!2sit" 
 		},
 		{
 			"date": "9/22",
 			"team": "U2 and U6",
 			"Location": "Howard A Yeager",
 			"time": "1:00 p.m.",
-			"address": "2245 N. Southport Ave., Chicago, IL 60614"
+			"address": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.590606291456!2d-87.66570362437227!3d41.923158762592635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e37f9b8d2d%3A0x62ad8b907dd755d6!2s2245%20N%20Southport%20Ave%2C%20Chicago%2C%20IL%2060614%2C%20USA!5e0!3m2!1sen!2sit!4v1693652245637!5m2!1sen!2sit"  
 		}
 	],
 	"2023_09_29": [{
@@ -64,7 +65,7 @@
 		"team": "U4 and U5",
 		"Location": "Greenbay",
 		"time": "9:30 a.m.",
-		"address": "1734 N. Orleans St., Chicago, IL 60614"
+		"address": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.025699045764!2d-87.64041422437275!3d41.91380626317852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34073f306a3%3A0x9e1726bbf8f23f0e!2s1734%20N%20Orleans%20St%2C%20Chicago%2C%20IL%2060614%2C%20USA!5e0!3m2!1sen!2sit!4v1693652189134!5m2!1sen!2sit"  
 	}],
 
 	"2023_10_06": [{
@@ -72,7 +73,7 @@
 			"team": "U2 and U5",
 			"Location": "Marjorie P Hart",
 			"time": "9:30 a.m.",
-			"address": "2625 N. Orchard St., Chicago, IL 60614"
+			"address": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.2917293244436!2d-87.648472524372!3d41.92958226218998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2630e551%3A0x3e719e44a5cef714!2s2625%20N%20Orchard%20St%2C%20Chicago%2C%20IL%2060614%2C%20USA!5e0!3m2!1sen!2sit!4v1693652288610!5m2!1sen!2sit"
 		},
 		{
 			"date": "10/06",
@@ -87,14 +88,14 @@
 			"team": "U3 and U4",
 			"Location": "Howard A Yeager",
 			"time": "9:30 a.m.",
-			"address": "2245 N. Southport Ave., Chicago, IL 60614"
+			"address": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.590606291456!2d-87.66570362437227!3d41.923158762592635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e37f9b8d2d%3A0x62ad8b907dd755d6!2s2245%20N%20Southport%20Ave%2C%20Chicago%2C%20IL%2060614%2C%20USA!5e0!3m2!1sen!2sit!4v1693652245637!5m2!1sen!2sit"  
 		},
 		{
 			"date": "10/13",
 			"team": "U5 and U1",
 			"Location": "Greenbay",
 			"time": "1:00 p.m.",
-			"address": "1734 N. Orleans St., Chicago, IL 60614"
+			"address": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.025699045764!2d-87.64041422437275!3d41.91380626317852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34073f306a3%3A0x9e1726bbf8f23f0e!2s1734%20N%20Orleans%20St%2C%20Chicago%2C%20IL%2060614%2C%20USA!5e0!3m2!1sen!2sit!4v1693652189134!5m2!1sen!2sit"  
 		}
 	],
 	"2023_10_20": [{
@@ -102,14 +103,14 @@
 			"team": "U6 and U3",
 			"Location": "North",
 			"time": "9:30 a.m.",
-			"address": "1409 N. Ogden Ave., Chicago, IL 60610"
+			"address": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.3558933826703!2d-87.64804792437313!3d41.906707463623164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd33a674ca85d%3A0x9940c7163c4950c5!2s1409%20N%20Ogden%20Ave%2C%20Chicago%2C%20IL%2060610%2C%20USA!5e0!3m2!1sen!2sit!4v1693652324014!5m2!1sen!2sit"
 		},
 		{
 			"date": "10/20",
 			"team": "U2 and U4",
 			"Location": "Marjorie P Hart",
 			"time": "1:00 p.m.",
-			"address": "2625 N. Orchard St., Chicago, IL 60614"
+			"address": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.2917293244436!2d-87.648472524372!3d41.92958226218998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2630e551%3A0x3e719e44a5cef714!2s2625%20N%20Orchard%20St%2C%20Chicago%2C%20IL%2060614%2C%20USA!5e0!3m2!1sen!2sit!4v1693652288610!5m2!1sen!2sit"
 		}
 	],
 	"2023_10_27": [{
@@ -117,14 +118,14 @@
 			"team": "U3 and U1",
 			"Location": "AJ Katzenmaier",
 			"time": "9:30 a.m.",
-			"address": "24 W. Walton St., Chicago, IL 60610"
+			"address": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.654060797269!2d-87.6316253243735!3d41.90029636402482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34e07f6bac3%3A0x68a82e5d59952c86!2s24%20W%20Walton%20St%2C%20Chicago%2C%20IL%2060610%2C%20USA!5e0!3m2!1sen!2sit!4v1693651757608!5m2!1sen!2sit" 
 		},
 		{
 			"date": "10/27",
 			"team": "U5 and U6",
 			"Location": "Howard A Yeager",
 			"time": "1:00 p.m.",
-			"address": "2245 N. Southport Ave., Chicago, IL 60614"
+			"address": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.590606291456!2d-87.66570362437227!3d41.923158762592635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e37f9b8d2d%3A0x62ad8b907dd755d6!2s2245%20N%20Southport%20Ave%2C%20Chicago%2C%20IL%2060614%2C%20USA!5e0!3m2!1sen!2sit!4v1693652245637!5m2!1sen!2sit"  
 		}
 	]
 
