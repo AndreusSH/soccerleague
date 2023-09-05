@@ -23,11 +23,13 @@ const Location = (props) => {
 
    //console.log('valori', Object.values(eventsData))
    return (
-    <div>
-      <h2>Location Details: {location}</h2>
-      <div class="map-responsive">
-        <iframe src={address }width={600} height={450} frameborder={0}></iframe>
+    <div className='flex flex-col items-center'>
+      <h2 className='mt-10 '>{location}</h2>
+      <div className='mt-15 '>
+        <iframe  
+        title={location} src={address} className='lg:w-[800px] lg:h-[600px] md:w-[600px] md:h-[400px]'>
 
+        </iframe>
 </div>
      </div>
   );
