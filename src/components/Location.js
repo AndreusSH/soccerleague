@@ -1,11 +1,10 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
 import eventsData from './events.json'; 
 
 
-const Location = (props) => {
+const Location = () => {
   const { location } = useParams();
-  const filteredEvents = Object.values(eventsData)  ;
+  const filteredEvents = Object.values(eventsData);
 
   const findAddressByLocation = (locationToFind) => {
     for (const eventsArray of filteredEvents) {
@@ -21,7 +20,6 @@ const Location = (props) => {
   const address = findAddressByLocation(location);
 
 
-   //console.log('valori', Object.values(eventsData))
    return (
     <div className='flex flex-col items-center'>
       <h2 className='mt-10 '>{location}</h2>

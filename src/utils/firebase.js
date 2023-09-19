@@ -3,10 +3,10 @@ import { GoogleAuthProvider, getAuth, signInWithPopup, signOut, onAuthStateChang
 import { useEffect, useState } from "react";
 import firebase from 'firebase/app';
 import 'firebase/auth';
-import 'firebase/database';
-import { getDatabase, ref, onValue } from "firebase/database";
-import 'firebase/storage';
- 
+ import { getDatabase, ref, onValue } from "firebase/database";
+ import "firebase/storage";
+import { getStorage } from "firebase/storage";
+
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 // Import the functions you need from the SDKs yo
 // TODO: Add SDKs for Firebase products that you want to use
@@ -32,9 +32,9 @@ export const auth = getAuth(firebaseApp);
  //const auth = getAuth(firebaseApp);
 
 export const database = getDatabase(firebaseApp);
- //export const database = firebase.database;
 
-//export const storage = firebase.storage;
+export const storage = getStorage(firebaseApp);
+
 
 export const signInWithGooglePopup = async () =>  {
   const provider = new GoogleAuthProvider();

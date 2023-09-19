@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+nav .custom-navlink {
+        color: white;
+        text-decoration: none;  
+        cursor: pointer; 
+    }
+
+nav .custom-navlink:hover {
+        
+        color: blueviolet   ; 
+      } 
+
+nav .active-link {
+        
+        background-color: red !important; /* Example: Set text color to red for the active link */
+      }
+      
+      /* Adjust spacing for mobile devices (sm and below) */
+@media (max-width: 640px) {
+    .custom-navlink {
+        
+        padding-bottom: 12px ;  
+    }
+}
+ 
+

@@ -4,8 +4,9 @@ import ErrorPage from "./ErrorPage";
 import SendMessage from "./SendMessage";
 import { useParams } from 'react-router-dom';
 import { useData } from "../utils/firebase";
+import Photo from "./Photo";
 
-function ChatScreen() {
+const ChatScreen = () => {
   const [user] = useAuthState(auth);
   const { id } = useParams();
 
@@ -35,10 +36,13 @@ function ChatScreen() {
   const [messageData, loading, error] = useData(`messages/game-${id}`, transformMessageData);
 
   return (
+    
     user ? (
       <>
         <div className="bg-gradient-to-r from-blue-500 to-purple-500 py-4">
           <h1 className="text-white text-2xl font-bold text-center">Soccer Game Chat</h1>
+                  <Photo/>
+
         </div>
 
         <div className="flex flex-col items-center">  
@@ -53,6 +57,9 @@ function ChatScreen() {
                   <div className="bg-gray-300 p-3 rounded-lg mt-3">
                     <p className="text-md">{message.text}</p>
                   </div>
+                  <div className="text-right text-gray-500 ml-2">
+                      {message.formattedTimestamp}
+                    </div>
                 </div>
               ))
             ) : (
@@ -60,7 +67,9 @@ function ChatScreen() {
             )}
           </ul>
         </div>
+      
         <SendMessage />
+       
       </>
     ) : (
       <ErrorPage />

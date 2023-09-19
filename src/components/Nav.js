@@ -9,7 +9,9 @@ const NavLinks = () => {
     const navLinks = [
         { path: "/", text: "Home" },
         { path: "/games", text: "Games" },
-        { path: "/chat", text: "Chat" },
+        { path: "/gallery", text: "Gallery" },
+       
+
       ];
 
     return(
@@ -53,7 +55,7 @@ const Nav = () => {
         </nav>
         {isOpen && (
         
-        <div className="flex basis-full flex-col items-center ">
+        <div className="flex basis-full flex-col items-center">
             <NavLinks/>
             </div>
              )}

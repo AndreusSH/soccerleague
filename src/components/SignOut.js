@@ -1,4 +1,3 @@
-import React from 'react';
 import { signOutGoogle } from '../utils/firebase';
 
 export const SignOut = () => {
