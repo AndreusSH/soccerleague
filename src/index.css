@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 nav .custom-navlink {
-        color: white;
+        color: gray;
         text-decoration: none;  
         cursor: pointer; 
     }
 
 nav .custom-navlink:hover {
         
-        color: blueviolet   ; 
+        color: rgb(67, 66, 66); 
       } 
 
 nav .active-link {

@@ -8,7 +8,6 @@ import Location from "./components/Location";
 import ChatScreen from "./components/ChatScreen";
 import ErrorPage from "./components/ErrorPage";
 import Gallery from "./components/Gallery";
-import GamePhoto from "./components/GamePhoto";
 import StoreImage from "./components/StoreImages";
 
 

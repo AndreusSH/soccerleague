@@ -10,7 +10,7 @@ function Button() {
    const [user] = useAuthState(auth);
 
   return (
-    <div className='mr-10'>
+    <div className='mr-5 mt-3 ml-5'>
       {/* Your component JSX */}
       {user ? <SignOut /> : <SignIn />}
     </div>

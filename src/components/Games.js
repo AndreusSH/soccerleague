@@ -2,9 +2,12 @@ import eventsData from './events.json';
 import '../index.css';
 import { Link } from "react-router-dom";
 
+ 
 const capitalize = (word) => {
   return word[0].toUpperCase() + word.slice(1);
 }
+
+
 
 const renderHeader = () => {
   const firstEvent = eventsData[Object.keys(eventsData)[0]][0];
@@ -39,36 +42,79 @@ const renderEvents = () => {
       const rowClasses = isEvenRow
         ? "bg-white border-b dark:bg-gray-800 dark:border-gray-700"
         : "bg-gray-100 border-b dark:bg-gray-800 dark:border-gray-700";
-      return (
-        <tr
-          className={rowClasses}  
-          key={`${dateKey}_${index}`}
-        >
-          <td className="px-4 py-2">{showDate ? entry.date : ""}</td>
-          <td className="px-4 py-2">
-            <Link to={`/chat/${uniqueIndex}`}
-            className="text-blue-500 font-semibold no-underline">{entry.team}</Link>
-          </td>
-          <td className="px-4 py-2">
-            <Link to={`/games/${entry.Location}`}>{entry.Location}</Link>
-          </td>              
-          <td className="px-4 py-2">{entry.time}</td>
-        </tr>
-      );
+        console.log((window.innerWidth < 620))
+        return (window.innerWidth < 620)
+        ? card(currentDate, entry.team, entry.Location, entry.time)
+        : table(
+            rowClasses,
+            dateKey,
+            index,
+            showDate,
+            currentDate,
+            uniqueIndex,
+            entry.team,
+            entry.Location,
+            entry.time
+          );
     })
   ));
 }
+ 
+
+
+const card = (date, team, location, time) => {
+  return (
+    <div className=" w-screen flex  flex-col justify-center items-center">
+    <div className="bg-white rounded-lg shadow-lg p-4 m-4 ">
+      <h1 className="text-2xl font-bold mb-2">{date}</h1>
+      <p className="text-lg">{team} {time}</p>
+      <Link
+        to={`/games/${location}`}
+        className="text-blue-500 font-semibold no-underline mt-2 block"
+      >
+        {location}
+      </Link>
+    </div>
+    </div>
+  );
+}
+
+const table = (rowClasses, dateKey, index, showDate, date, uniqueIndex, team, location, time) =>{
+
+return (
+  <tr
+  className={rowClasses}  
+  key={`${dateKey}_${index}`}
+>
+  <td className="px-4 py-2">{showDate ? date : ""}</td>
+  <td className="px-4 py-2">
+    <Link to={`/chat/${uniqueIndex}`}
+    className="text-blue-500 font-semibold no-underline">{team}</Link>
+  </td>
+  <td className="px-4 py-2">
+    <Link to={`/games/${location}`}
+    className="text-blue-500 font-semibold no-underline"
+    >{location}</Link>
+  </td>              
+  <td className="px-4 py-2">{time}</td>
+</tr>
+)
+}
+
+
+
 
 const Games = () => {
+ 
   return (
-    <div>
+    <>
+    <div> 
       <table className="w-full table-auto absolute">
-        <thead>
-          {renderHeader()}
-        </thead>
-        <tbody >{renderEvents()}</tbody>
+        <thead >{renderHeader()}</thead>
+        <tbody>{renderEvents()}</tbody>
       </table>
     </div>
+  </>
   );
 }
 
