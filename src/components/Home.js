@@ -29,7 +29,7 @@ function Home() {
               {event.date} <span className="font-bold">{event.event}</span>
             </p>
           ))}
-          <button onClick={checkLogin}>CHAT</button>
+           
         </div>
       </div>
     );
