@@ -4,6 +4,7 @@ import {Menu, X} from "lucide-react";
 import "../index.css";
 import Button from "./Button";
 import Logo from "./Logo";
+import ReactSwitch from "react-switch";
 
 
 const NavLinks = () => {
@@ -46,6 +47,7 @@ const Nav = () => {
              <div className="hidden w-full lg:flex flex-row justify-between">
                 <NavLinks/>
                 <Button/>
+                <ReactSwitch className="mt-6 mr-5"/>
             </div>
 
 
@@ -57,11 +59,12 @@ const Nav = () => {
         </nav>
         {isOpen && (
         
-        <div className="fixed top-0 left-0 w-3/4 h-full bg-white text-gray-500 transform transition-transform border-r border-gray-500">
+        <div className="fixed top-0 left-0 w-3/4 h-full bg-purple-900 transform transition-transform border-r border-red-800">
             <div className="flex flex-col items-center p-4 ">
             <Logo/>
             <NavLinks/>
             <Button/>
+            <ReactSwitch className="mt-5"/>
             </div>
             </div>
              )}
