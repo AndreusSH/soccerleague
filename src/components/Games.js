@@ -1,6 +1,8 @@
 import eventsData from './events.json'; 
 import '../index.css';
 import { Link } from "react-router-dom";
+import { useState } from 'react';
+import { useEffect } from 'react';
 
  
 const capitalize = (word) => {
@@ -28,7 +30,7 @@ const renderHeader = () => {
   );
 }
 
-const renderEvents = () => {
+const renderEvents = (device) => {
   let previousDate = null;
   let uniqueIndex = 0; 
 
@@ -42,8 +44,8 @@ const renderEvents = () => {
       const rowClasses = isEvenRow
         ? "bg-white border-b dark:bg-gray-800 dark:border-gray-700"
         : "bg-gray-100 border-b dark:bg-gray-800 dark:border-gray-700";
-        console.log((window.innerWidth < 620))
-        return (window.innerWidth < 620)
+       
+        return (device === "phone")
         ? card(currentDate, entry.team, entry.Location, entry.time)
         : table(
             rowClasses,
@@ -105,14 +107,38 @@ return (
 
 
 const Games = () => {
- 
+  const [smallScreen, setSmallScreen] = useState(window.innerWidth < 620);
+
+  useEffect(() => {
+    // Add an event listener to track window size changes
+    const handleResize = () => {
+      setSmallScreen(window.innerWidth < 620);
+    };
+
+    // Attach the event listener
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <>
-    <div> 
-      <table className="w-full table-auto absolute">
-        <thead >{renderHeader()}</thead>
-        <tbody>{renderEvents()}</tbody>
-      </table>
+    <div>
+      {smallScreen ? (
+        // Render the card view for small screens
+        <div>
+          <tbody>{renderEvents("phone")}</tbody>
+        </div>
+      ) : (
+        // Render the table view for large screens
+        <table className="w-full table-auto absolute">
+          <thead>{renderHeader()}</thead>
+          <tbody>{renderEvents("desktop")}</tbody>
+        </table>
+      )}
     </div>
   </>
   );
