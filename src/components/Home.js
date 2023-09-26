@@ -23,9 +23,9 @@ function Home() {
     return (
       <div className="flex justify-center items-center mt-10">
         <div className="text-center">
-          <h1 className="text-3xl font-bold mb-4 underline">Upcoming Events</h1>
+          <h1 className="md:text-lg lg:text-xl font-bold mb-4 underline">Upcoming Events</h1>
           {Object.values(upcoming_events).map((event, index) => (
-            <p key={index} className="text-lg mb-4">
+            <p key={index} className="text-lg mb-4 sm:text-base md:text-lg lg:text-xl">
               {event.date} <span className="font-bold">{event.event}</span>
             </p>
           ))}

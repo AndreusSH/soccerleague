@@ -9,8 +9,6 @@ const capitalize = (word) => {
   return word[0].toUpperCase() + word.slice(1);
 }
 
-
-
 const renderHeader = () => {
   const firstEvent = eventsData[Object.keys(eventsData)[0]][0];
   return (
@@ -42,8 +40,8 @@ const renderEvents = (device) => {
       uniqueIndex++;
       const isEvenRow = dateIndex % 2 === 0;
       const rowClasses = isEvenRow
-        ? "bg-white border-b dark:bg-gray-800 dark:border-gray-700"
-        : "bg-gray-100 border-b dark:bg-gray-800 dark:border-gray-700";
+        ? " border-b dark:bg-gray-800 dark:border-gray-700"
+        : "border-b dark:bg-gray-800 dark:border-gray-700";
        
         return (device === "phone")
         ? card(currentDate, entry.team, entry.Location, entry.time)
@@ -64,12 +62,13 @@ const renderEvents = (device) => {
  
 
 
-const card = (date, team, location, time) => {
+const card = (date, team, location, time, uniqueIndex) => {
   return (
     <div className=" w-screen flex  flex-col justify-center items-center">
-    <div className="bg-white rounded-lg shadow-lg p-4 m-4 ">
+    <div className=" card h-32 w-56 rounded-lg shadow-lg p-4 m-4 ">
       <h1 className="text-2xl font-bold mb-2">{date}</h1>
-      <p className="text-lg">{team} {time}</p>
+      <Link to={`/chat/${uniqueIndex}`}
+    className="text-blue-500 font-semibold no-underline">{team}</Link>
       <Link
         to={`/games/${location}`}
         className="text-blue-500 font-semibold no-underline mt-2 block"

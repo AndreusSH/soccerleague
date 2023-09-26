@@ -25,5 +25,51 @@ nav .active-link {
         padding-bottom: 12px ;  
     }
 }
- 
+
+
+
+#dark {
+    background-color: rgb(30, 1, 68);
+    color: white;
+}
+
+#dark .card {
+    background-color: rgb(24, 24, 99);
+    color: white;
+    border-color: whitesmoke;
+}
+
+#dark .sidebar {
+    background-color: rgb(24, 24, 99);
+    color: white;
+    border-color: whitesmoke;
+}
+
+#dark .signOut {
+    background-color: rgb(24, 24, 99);
+    color: white;
+    border-color: whitesmoke;
+     
+}
+.group:hover .signOut {
+    background-color: red; /* Example: Change background-color on hover */
+    color: white; /* Change text color on hover */
+    border-color: whitesmoke;
+}
+
+
+#light{
+    background-color: white;
+}
+
+#light .signIn {
+    background-color: rgb(219, 207, 207);
+    color: black;
+     
+}
+
+#light .sidebar {
+    background-color: rgb(219, 207, 207);
+    color: black;
+}
 
