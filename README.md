@@ -1,5 +1,8 @@
 # Soccer Game for Kids App
 
+
+### [Hosting URL](https://nysl-progressive-app.web.app)
+
 ## Overview
 
 This is a fun and interactive soccer game app designed for kids. It provides an engaging soccer game experience while promoting enjoyment and learning.
@@ -18,16 +21,7 @@ This is a fun and interactive soccer game app designed for kids. It provides an 
 - **Chat About the Game:** Engage in real-time chat discussions related to the ongoing game.
 - **Upload/See Pictures:** Share and view pictures specific to each game.
 
-## Table of Contents
-
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [Contributing](#contributing)
-- [License](#license)
-
+ 
 ## Getting Started
 
 ### Prerequisites
