@@ -45,15 +45,15 @@ const ChatScreen = () => {
 
         </div>
 
-        <div className="flex flex-col items-center">  
-          <ul className="w-full max-w-xl">
+        <div className=" mt-5 flex flex-col items-center">  
+          <ul className=" w-full max-w-xl">
             {loading ? (
               <li>Loading...</li>
             ) : error ? (
               <li>Error: {error.message}</li>
             ) : messageData ? (
               messageData.map((message) => (
-                <div key={message.id} className="flex flex-col w-full"> 
+                <div key={message.id} className=" mt-2 flex flex-col w-full"> 
                   <div className="bg-gray-300 p-3 rounded-lg mt-3">
                     <p className="text-md">{message.text}</p>
                   </div>
@@ -68,7 +68,7 @@ const ChatScreen = () => {
           </ul>
         </div>
       
-        <SendMessage />
+        <SendMessage/>
        
       </>
     ) : (

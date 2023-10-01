@@ -12,7 +12,7 @@ const capitalize = (word) => {
 const renderHeader = () => {
   const firstEvent = eventsData[Object.keys(eventsData)[0]][0];
   return (
-    <tr className="bg-white sticky top-0">
+    <tr className=" sticky top-0">
       {Object.keys(firstEvent)
         .filter((key) => key !== "address")
         .map((key, index) => (
@@ -65,7 +65,7 @@ const renderEvents = (device) => {
 const card = (date, team, location, time, uniqueIndex) => {
   return (
     <div className=" w-screen flex  flex-col justify-center items-center">
-    <div className=" card h-32 w-56 rounded-lg shadow-lg p-4 m-4 ">
+    <div className="card h-32 w-56 rounded-lg shadow-lg p-4 m-4 ">
       <h1 className="text-2xl font-bold mb-2">{date}</h1>
       <Link to={`/chat/${uniqueIndex}`}
     className="text-blue-500 font-semibold no-underline">{team}</Link>
@@ -133,10 +133,12 @@ const Games = () => {
         </div>
       ) : (
         // Render the table view for large screens
-        <table className="w-full table-auto absolute">
+        <div className='h-screen'>
+        <table className=" h-full w-full  table-auto absolute">
           <thead>{renderHeader()}</thead>
-          <tbody>{renderEvents("desktop")}</tbody>
+          <tbody className='h-full min-h-screen'>{renderEvents("desktop")}</tbody>
         </table>
+        </div>
       )}
     </div>
   </>

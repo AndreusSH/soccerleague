@@ -21,7 +21,7 @@ const Location = () => {
 
 
    return (
-    <div className='flex flex-col items-center'>
+    <div className='h-screen flex flex-col items-center'>
       <h2 className='mt-10 '>{location}</h2>
       <div className='mt-15 '>
         <iframe  

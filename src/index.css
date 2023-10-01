@@ -33,6 +33,8 @@ nav .active-link {
     color: white;
 }
 
+ 
+
 #dark .card {
     background-color: rgb(24, 24, 99);
     color: white;
@@ -47,22 +49,29 @@ nav .active-link {
 
 #dark .signOut {
     background-color: rgb(24, 24, 99);
-    color: white;
+    color: red;
     border-color: whitesmoke;
      
 }
-.group:hover .signOut {
-    background-color: red; /* Example: Change background-color on hover */
-    color: white; /* Change text color on hover */
+
+#dark .signIn {
+    background-color: rgb(24, 24, 99);
+    color: red;
     border-color: whitesmoke;
+     
 }
-
-
+ 
 #light{
     background-color: white;
 }
 
 #light .signIn {
+    background-color: rgb(219, 207, 207);
+    color: black;
+     
+}
+
+#light .signOut {
     background-color: rgb(219, 207, 207);
     color: black;
      

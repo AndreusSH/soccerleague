@@ -25,7 +25,7 @@ const Gallery = ({ gameId }) => {
   }, [gameId]);
 
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="h-screen grid grid-cols-3 gap-4 ">
       {imageUrls.map((url, index) => (
         <div key={index}>
           <img src={url} alt={`${index}`} className="w-full h-auto" />

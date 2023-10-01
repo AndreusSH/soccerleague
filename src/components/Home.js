@@ -21,7 +21,7 @@ function Home() {
     };
   
     return (
-      <div className="flex justify-center items-center mt-10">
+      <div className="flex justify-center items-center mt-10 h-screen">
         <div className="text-center">
           <h1 className="md:text-lg lg:text-xl font-bold mb-4 underline">Upcoming Events</h1>
           {Object.values(upcoming_events).map((event, index) => (
